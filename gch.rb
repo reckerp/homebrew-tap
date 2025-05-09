@@ -5,11 +5,11 @@
 class Gch < Formula
   desc "gch is an intelligent Git branch checkout tool that provides fast and intuitive branch switching. It uses fuzzy matching to find branches based on partial names, making it easy to switch between branches without typing the full name."
   homepage "https://github.com/reckerp/gch"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
-    url "https://github.com/reckerp/gch/releases/download/v1.0.2/gch_Darwin_all.tar.gz"
-    sha256 "8f8559d41e2641fc7ae463782b550b35db44989c9e8d883660d6d515d3ba363d"
+    url "https://github.com/reckerp/gch/releases/download/v1.0.3/gch_Darwin_all.tar.gz"
+    sha256 "da2b90e93ccf20b7761cb58dae424aa7dbf765e35f2c14d04fd779f5d60f0f51"
 
     def install
       bin.install "gch"
@@ -18,15 +18,15 @@ class Gch < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/reckerp/gch/releases/download/v1.0.2/gch_Linux_x86_64.tar.gz"
-      sha256 "37a72c0b963efb78ecdeca585b5276c68be52a042e07a0d22815f35d15e923f1"
+      url "https://github.com/reckerp/gch/releases/download/v1.0.3/gch_Linux_x86_64.tar.gz"
+      sha256 "326f69ab74a60b84826501a5f66dca79bdbf072ff13ffaad65ecf30ffc8cc5df"
       def install
         bin.install "gch"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/reckerp/gch/releases/download/v1.0.2/gch_Linux_arm64.tar.gz"
-      sha256 "980d2c70e48f873ff07abfce3fc82383a94a84374b16dc5bac1b345772770504"
+      url "https://github.com/reckerp/gch/releases/download/v1.0.3/gch_Linux_arm64.tar.gz"
+      sha256 "8149bfdf1b450a8048eb6ccec855a6f7acb9379e22dae30787ded0b89c261d2a"
       def install
         bin.install "gch"
       end
