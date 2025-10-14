@@ -5,11 +5,11 @@
 class Hcbox < Formula
   desc "hcbox is a toolbox for managing hetzner cloud development/testing servers."
   homepage "https://github.com/reckerp/hcbox"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
-    url "https://github.com/reckerp/hcbox/releases/download/v1.0.0/hcbox_Darwin_all.tar.gz"
-    sha256 "dba66fb99c3dc909b3adcaf40dd44c23a0a50ec9ae7b07367395d4a2a55ad0e1"
+    url "https://github.com/reckerp/hcbox/releases/download/v1.0.1/hcbox_Darwin_all.tar.gz"
+    sha256 "a2bd29be3da9023dc895b58e02229a061c0e3ff026c643bbea27e8a60ea46283"
 
     def install
       bin.install "hcbox"
@@ -17,16 +17,16 @@ class Hcbox < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/reckerp/hcbox/releases/download/v1.0.0/hcbox_Linux_x86_64.tar.gz"
-      sha256 "2b31354572ca31a4971af5c17a9fa606cd6cc913a930616fd1cd963f570342cf"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/reckerp/hcbox/releases/download/v1.0.1/hcbox_Linux_x86_64.tar.gz"
+      sha256 "0cc28af79e294d95a80f542078fae1fcc80459b096ae3f5b734f962b585667a5"
       def install
         bin.install "hcbox"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/reckerp/hcbox/releases/download/v1.0.0/hcbox_Linux_arm64.tar.gz"
-      sha256 "de99a08d52edcb9abfeca67f1914fc1beec6de90cc7dcb7e028cf53efefe7039"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/reckerp/hcbox/releases/download/v1.0.1/hcbox_Linux_arm64.tar.gz"
+      sha256 "441ed780ee27a59b4365928b87e7f3b9e1ddf042c1df277b5c3c96061feb7820"
       def install
         bin.install "hcbox"
       end
