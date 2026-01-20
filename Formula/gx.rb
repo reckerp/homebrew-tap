@@ -1,25 +1,25 @@
 class Gx < Formula
   desc "GX is a smart git CLI"
   homepage "https://github.com/reckerp/gx"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/reckerp/gx/releases/download/v0.1.1/gx-aarch64-apple-darwin.tar.xz"
-      sha256 "09be3cb4169bf950e3c1bd482b7838acff7e669046921e37fc65e80b9cbda64b"
+      url "https://github.com/reckerp/gx/releases/download/v0.1.2/gx-aarch64-apple-darwin.tar.xz"
+      sha256 "be5eea1e6504c13b92d0040da2584b97c58fa185d00d8c9ee305890ad8d11018"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/reckerp/gx/releases/download/v0.1.1/gx-x86_64-apple-darwin.tar.xz"
-      sha256 "9c9acae2fb5c6dad7fa6d30b90d22e67909d1d67823896dcbbc80bfe8763bb87"
+      url "https://github.com/reckerp/gx/releases/download/v0.1.2/gx-x86_64-apple-darwin.tar.xz"
+      sha256 "9a0f9fd522345d47dd93d8545148be627880802b076325188c4d12ffa06cf9dc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/reckerp/gx/releases/download/v0.1.1/gx-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "3d8839b2f98f426fe7de5eab673c0f593fd4bce8c5297f911dbad8b5fd53b02e"
+      url "https://github.com/reckerp/gx/releases/download/v0.1.2/gx-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "79263cf46a58fc90bd18c7d34a0678ae018c02d07ff8313596fa41fd2d649238"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/reckerp/gx/releases/download/v0.1.1/gx-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3ce21eebb4254966835af795a6d051d432c9c6ffd97e99b0a53a29b19cc7b8df"
+      url "https://github.com/reckerp/gx/releases/download/v0.1.2/gx-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f05e4a7e88cca4c457d9a6bae40e74ba38554b9b6596c1a9e681a7a29e30c728"
     end
   end
 
